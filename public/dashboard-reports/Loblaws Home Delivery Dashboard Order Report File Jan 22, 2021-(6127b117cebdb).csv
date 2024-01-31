@@ -1,0 +1,4 @@
+"Route #",Joey,"Merchant Order #","Store Name","Customer Address","Planned Arrival","Arrival time @ PU","Actual Departure","Time Open","Time Close","Estimated Delivery ETA","Actual Arrival @ CX","Wait Time","Drive Time",Distance,Status,"JoeyCo Notes / Comments"
+3367321,,,,"2232 Lawrence Ave E",,,,10:00,16:00,"2021-01-22 20:30:00",,00:00:00,00:00:00,42.603km,"Packages sorted",
+3374055,,,"Sport Chek Mississauga DC","21 Harvest Moon Dr","2021-01-22 20:30:00",,,10:00,16:00,"2021-01-22 21:57:00",,00:00:00,00:00:00,46.579km,"Joey Incident",
+3374369,,,"Sport Chek Mississauga DC","360 Brunswick Ave","2021-01-22 20:30:00",,,10:00,16:00,"2021-01-22 22:02:00",,00:00:00,00:00:00,34.967km,"Delivery success",
