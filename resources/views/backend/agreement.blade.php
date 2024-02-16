@@ -277,6 +277,29 @@
                 <article class="article">
 
                     {!! $record->copy !!}
+                    <form action="{{ route('agreement.signed') }}" method="post">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <div class="row">
+
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <div class="input-wrapper col-md-6">
+                                    <input type="hidden" name="agreement_id" id="agreement_id" value="{{ $record->id }}">
+                                    <input class="form-control" type="email" id="email" name="email"
+                                           placeholder="Please Enter Your Email For Accept This Agreement" required>
+
+                                </div>
+
+                                <div class="actions col-md-6">
+
+                                    <button type="submit" id="save" class="lx-btn btn btn-primary"><i class="fa fa-save"></i> Signed</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </form>
 
                 </article>
 
@@ -284,29 +307,7 @@
 
 
 
-            {{-- <form action="{{ route('agreement.signed') }}" method="post">
-                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                <div class="row">
 
-                    <div class="col-12 col-sm-12 col-md-6">
-                        <div class="input-wrapper col-md-6">
-                            <input type="hidden" name="agreement_id" id="agreement_id" value="{{ $record->id }}">
-                            <input class="form-control" type="email" id="email" name="email"
-                                   placeholder="Please Enter Your Email For Accept This Agreement" required>
-
-                        </div>
-
-                        <div class="actions col-md-6">
-
-                        <button type="submit" id="save" class="lx-btn btn btn-primary"><i class="fa fa-save"></i> Signed</button>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </form> --}}
 
         </section>
 

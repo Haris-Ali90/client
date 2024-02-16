@@ -16,6 +16,7 @@ class AgreementController extends Controller
 {
 
     function getIndex(){
+
         $record = Agreements::where('target', 'vendors')->first();
         return view('backend/agreement', compact('record'));
     }

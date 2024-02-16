@@ -81,8 +81,10 @@ class DashboardController extends BackendController
 //        }
 
         $agreement = Agreements::where('target', 'vendors')->first();
+//        dd($auth_user->id);
         $has_user_signed_agreement = AgreementsUser::where('agreement_id', $agreement->id)->where('user_id',$auth_user->id)->where('user_type','vendors')->whereNotNull('signed_at')->exists();
 
+//        dd($has_user_signed_agreement);
         //Mark:- If user is logged in and his agreement is not signed yet, It will redirect it to Agreement Page
         if(!$has_user_signed_agreement){
             return redirect('agreement');
