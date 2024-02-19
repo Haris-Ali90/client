@@ -168,6 +168,7 @@ Route::group(['middleware' => 'web', 'namespace' => 'Backend'], function () {
 
         ###Micro Hub Agreement Page ###
         Route::get('agreement', 'AgreementController@getIndex')->name('agreement.signed');
+        Route::post('agreement_submit', 'AgreementController@agreementSigned')->name('agreement.signed.submit');
 
 
         ###Blank Landing Page ###

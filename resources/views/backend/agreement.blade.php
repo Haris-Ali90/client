@@ -277,7 +277,7 @@
                 <article class="article">
 
                     {!! $record->copy !!}
-                    <form action="{{ route('agreement.signed') }}" method="post">
+                    <form action="{{ route('agreement.signed.submit') }}" method="post">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="row">
 
